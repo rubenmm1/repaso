@@ -1,0 +1,187 @@
+body{
+    background-color: #caf0f8;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.grid-container{
+    display: grid;
+
+    grid-template-areas: "header header"
+                            "aside main"
+                            "footer footer ";
+
+
+    grid-template-columns: 250px 1fr;
+
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100vh;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Estilos del menú */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover */
+.menu a:hover {
+    background-color: #d6ccc2;
+    color: #000;
+}
+
+
+aside{ grid-area: aside;
+    background-color: #edede9;
+    padding: 5px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+header{ grid-area: header;
+        background-color: #edede9;
+        padding: 20px 10px;
+        text-align: center;
+        border-bottom: 2px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+
+main{grid-area: main;
+     background-color: #e5e5e5;
+    padding: 10px;}
+
+footer{grid-area: footer;
+        background-color: #222;
+        color: white; 
+        padding: 0 0;
+}
+
+.contenedor{
+    margin: 2%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #caf0f8;
+}
+
+.contenedor div{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px;
+}
+
+.contenedor div img{
+    width: 15%;
+}
+
+.contenedor div p{
+    font: 1,5em sans-serif;
+}
+
+.contenedor a{
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+ .form-container {
+            max-width: 500px;
+            background-color: #ffffff;
+            padding: 30px;
+            margin: 50px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+
